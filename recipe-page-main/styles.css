@@ -2,7 +2,7 @@
 better to use the google api way 
 wait is this actually true? i dont remember*/
 
-@font-face {
+/* @font-face {
     font-family: "Young Serif";
     src: url(../young-serif/YoungSerif-Regular.ttf);
 }
@@ -10,7 +10,7 @@ wait is this actually true? i dont remember*/
 @font-face {
     font-family: "Outfit";
     src: url(../outfit/Outfit-VariableFont_wght.ttf); 
-}
+} */
 
 /* HSL = Hue, saturation, lightness */
 body{
@@ -18,7 +18,7 @@ body{
 }
 
 .recipe-title{
-    font-family: "Young Serif";
+    font-family: "Young Serif", serif;
     color: hsl(24, 5%, 18%);
     font-size: 40px;
 }
@@ -41,18 +41,17 @@ body{
 
 .text{
     color: hsl(30, 10%, 34%);
-    font-family: "Outfit";
-    font-size: 18px;
+    font-family: "Outfit", serif;
 }
 
 .preptime-box{
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .preptime-header{
-    font-family: "Outfit";
+    font-family: "Outfit", serif;
     color: hsl(332, 51%, 32%);
 }
 
@@ -77,13 +76,13 @@ ol li{
 
 .bullet_text{
     color: hsl(30, 10%, 34%);
-    font-family: "Outfit";
+    font-family: "Outfit", serif;
     font-size: 18px;
     padding-left: 20px;
 }
 
 .section-title{
-    font-family: "Young Serif";
+    font-family: "Young Serif", serif;
     color: hsl(14, 45%, 36%);
     font-size: 30px;
 }
@@ -99,13 +98,13 @@ ol li{
 
 .nutrition-name{
     color: hsl(30, 10%, 34%);
-    font-family: "Outfit";
+    font-family: "Outfit", serif;
     font-size: 18px;
     padding-left: 20px;
 }
 
 .nutrition-numbers{
-    font-family: "Outfit";
+    font-family: "Outfit", serif;
     font-weight: bold;
     color:hsl(14, 45%, 36%);
     font-size: 16px;
@@ -113,19 +112,23 @@ ol li{
 }
 
 table {
-    table-layout: auto;
-    width: 37rem;
-    border-collapse: collapse;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid black; */
 }
 
 table td {
     text-indent: 2rem;
-    border-bottom: 1px solid lightgray;
-    padding: 0.8rem 0 1rem 0; /* top, right, bottom, left */
+    border-bottom: 2px solid lightgray;
+    padding: 1rem 0 1rem 0; /* top, right, bottom, left */
+}
+
+tr:last-child td{
+    border-bottom: 0;
 }
 
 .measurements {
-    font-family: "Outfit";
+    font-family: "Outfit", serif;
     font-weight: bold;
     font-size: 16px;
     color: hsl(14, 45%, 36%);
